@@ -1,0 +1,24 @@
+
+    <div class="container">
+      <h4 class="td-background"> Select Country </h4>
+      
+        <ng-template #rt let-r="result" let-t="term">
+          <img [src]="r['flag']" width="16">
+          {{ r.name}}
+        </ng-template>
+        
+        <label for="typeahead-template">Search for a state:</label>
+        <input id="typeahead-template" type="text" (selectItem)="selectedItem($event)" class="form-control" [(ngModel)]="model" [ngbTypeahead]="search" [resultTemplate]="rt"
+          [inputFormatter]="formatter" />
+        <hr>
+        
+
+        <div *ngFor="let selected of selectedcountry">
+          <div class="selected" >
+              <span>{{selected.name}}</span>
+              <img width="16" src= "{{selected.flag}}" />
+          </div>
+      </div>
+       
+      </div>
+

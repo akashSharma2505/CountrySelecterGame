@@ -1,0 +1,7 @@
+.title{font-weight: bold;font-size: 18px;}
+.flag{width:500px;height:350px;}
+li{list-style: none;}
+ul{width:94%;}
+.table{width:50%; float:left}
+.degree{width:10px;height:10px;border-radius: 5px;border: solid 1px black;}
+.countryContainer{width:200px;height:300px;overflow: auto;float:left;}
